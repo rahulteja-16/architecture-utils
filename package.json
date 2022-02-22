@@ -1,16 +1,22 @@
 {
   "name": "lk_architecture_utils",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Utility Helper Package",
   "main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"browser": "dist/index.bundle.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && rollup -c",
+    "build": "npm run clean && rollup -c && tsc --emitDeclarationOnly",
     "lint": "eslint --fix 'src/**/*.ts'",
-    "test": "jest"
+    "test": "jest",
+    "publish:public": "npm publish --access public"
   },
+  "files": [
+		"dist",
+		"README.md"
+	],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rahulteja-dev/architecture-utils.git"
@@ -56,8 +62,5 @@
     "testMatch": [
       "**/test/**/*.test.ts"
     ]
-  },
-  "dependencies": {
-    "deepmerge": "^4.2.2"
   }
 }
