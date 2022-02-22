@@ -1,10 +1,13 @@
 {
-  "name": "architecture-utils",
+  "name": "architecture_utils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/architecture_utils.cjs.js",
+  "module": "dist/architecture_utils.es.js",
+  "browser": "dist/architecture_utils.js",
   "scripts": {
-    "build": "rollup -c",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c",
     "lint": "eslint --fix 'src/**/*.ts'",
     "test": "jest"
   },
