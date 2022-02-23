@@ -1,17 +1,29 @@
 {
+  "compileOnSave": false,
 	"compilerOptions": {
-		"declaration": true,
-		"declarationDir": "./dist",
-		"module": "es6",
-		"noImplicitAny": true,
-		"outDir": "./dist",
+    "lib": [
+      "es2015",
+    ],
 		"target": "es2015",
-		"skipLibCheck": true,
+		"module": "es2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+		"declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types/index.d.ts"
+    ]
 	},
 	"include": [
-		"src/index.ts"
+		"src/**/*.ts",
+    "test/**/*.ts"
 	],
 	"exclude": [
 		"node_modules"
-	]
+	],
 }

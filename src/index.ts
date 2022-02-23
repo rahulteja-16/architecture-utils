@@ -1,7 +1,7 @@
-import trim from './trim';
-import odd_even from './odd_even';
+import {trim} from './trim';
+import {oddEven} from './odd_even';
 
-export default {
-  trim: trim,
-  odd_even: odd_even,
+export {
+  trim,
+  oddEven,
 }
