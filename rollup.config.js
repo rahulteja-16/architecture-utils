@@ -1,5 +1,4 @@
 
-// import replace from "@rollup/plugin-replace";
 import typescript from "rollup-plugin-ts";
 import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
