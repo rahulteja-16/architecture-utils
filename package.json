@@ -1,6 +1,6 @@
 {
   "name": "lk_architecture_utils",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Utility Helper Package",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
